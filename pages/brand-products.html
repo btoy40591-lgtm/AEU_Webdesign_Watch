@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brand Products</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/css_animation.css">
+
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+  <style>
+
+    body{
+      background:#f8f9fa;
+    }
+
+    .product-card{
+      border:none;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .product-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .product-card img{
+      height:250px;
+      object-fit:cover;
+    }
+
+    .brand-header{
+      background:#111;
+      color:white;
+      padding:80px 0;
+      text-align:center;
+    }
+
+  </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top watch-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-3" href="../index.html">
+      ⌚ WATCH
+    </a>
+
+
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse">
+
+      <!-- Center Menu -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">
+            Home
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="./shop.html">
+            Shop
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="./brands.html">
+            Brands
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="./collections.html">
+            Collections
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="./accessories.html">
+            Accessories
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.html">
+            Blog
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">
+            Contact
+          </a>
+        </li>
+
+
+      </ul>
+
+
+
+      <!-- Right Actions -->
+      <div class="navbar-actions d-flex align-items-center gap-3">
+
+
+        <!-- Search -->
+        <div class="search-box d-none d-xl-block">
+          <i class="bi bi-search"></i>
+
+          <input 
+            type="text"
+            placeholder="Search watches..."
+          >
+
+        </div>
+
+
+
+        <!-- Icons -->
+
+        <a href="./login.html" class="nav-icon">
+          <i class="bi bi-person"></i>
+        </a>
+
+
+        <a href="./wishlist.html" class="nav-icon">
+          <i class="bi bi-heart"></i>
+        </a>
+
+
+        <a href="./cart.html" class="nav-icon position-relative">
+
+          <i class="bi bi-cart3"></i>
+
+          <span class="cart-count">
+            0
+          </span>
+
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+</nav>
+
+
+<!-- MOBILE OFFCANVAS -->
+
+<div 
+class="offcanvas offcanvas-end text-bg-dark"
+id="mobileMenu"
+>
+
+
+<div class="offcanvas-header">
+
+<h5 class="offcanvas-title fw-bold">
+⌚ WATCH
+</h5>
+
+
+<button 
+class="btn-close btn-close-white"
+data-bs-dismiss="offcanvas">
+</button>
+
+
+</div>
+
+
+
+
+<div class="offcanvas-body">
+
+
+<ul class="navbar-nav gap-2">
+
+
+<li>
+<a class="nav-link text-white" href="../index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a class="nav-link text-white" href="shop.html">
+Shop
+</a>
+</li>
+
+
+<li>
+<a class="nav-link text-white" href="brands.html">
+Brands
+</a>
+</li>
+
+
+<li>
+<a class="nav-link text-white" href="collections.html">
+Collections
+</a>
+</li>
+
+
+<li>
+<a class="nav-link text-white" href="accessories.html">
+Accessories
+</a>
+</li>
+
+
+<li>
+<a class="nav-link text-white" href="blog.html">
+Blog
+</a>
+</li>
+
+
+<li>
+<a class="nav-link text-white" href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+<div class="mobile-search">
+
+<input 
+class="form-control"
+placeholder="Search watches..."
+>
+
+
+</div>
+
+
+
+<div class="d-flex gap-4 mt-4 fs-3">
+
+
+<a href="login.html" class="text-white">
+<i class="bi bi-person"></i>
+</a>
+
+
+<a href="wishlist.html" class="text-white">
+<i class="bi bi-heart"></i>
+</a>
+
+
+<a href="cart.html" class="text-white">
+<i class="bi bi-cart3"></i>
+</a>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<!-- HEADER -->
+<section class="brand-header">
+
+  <div class="container">
+
+    <h1 class="fw-bold display-4">
+      Rolex Collection
+    </h1>
+
+    <p>
+      Explore luxury Rolex watches
+    </p>
+
+  </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-5">
+
+  <div class="container">
+
+    <div class="row g-4" id="brandProducts">
+    </div>
+
+  </div>
+
+</section>
+
+<script src="../js/data.js"></script>
+<script src="../js/brand-products.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

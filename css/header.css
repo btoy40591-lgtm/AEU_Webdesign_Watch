@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+
+
+  /* ================= COLORS ================= */
+  --primary-color: #c9a227;
+  --dark-color: #0b0b0b;
+  --dark-light: #111;
+  --white-color: #ffffff;
+  --text-gray: #bdbdbd;
+  --bg-light: #f8f9fa;
+
+  /* ================= SHADOW ================= */
+  --shadow-sm: 0 4px 10px rgba(0,0,0,0.1);
+  --shadow-md: 0 8px 20px rgba(0,0,0,0.15);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,0.2);
+
+  /* ================= BORDER RADIUS ================= */
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+
+  /* ================= TRANSITION ================= */
+  --transition: 0.3s ease;
+
+  /* ================= FONT ================= */
+  --main-font: 'Poppins', sans-serif;
+
+  /* ================= FONT SIZE ================= */
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+  --fs-3xl: 48px;
+
+  /* ================= FONT WEIGHT ================= */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* ================= ICON SIZE ================= */
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 28px;
+  --icon-xl: 36px;
+
+  /* ================= SPACING ================= */
+  --space-xs: 5px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 40px;
+  --space-xl: 60px;
+
+}
+
+
+
+.watch-navbar{
+    background: rgba(10,10,10,.95);
+    backdrop-filter: blur(10px);
+    transition:.3s;
+}
+
+
+.nav-link{
+    color:#ddd !important;
+    margin:0 8px;
+    font-weight:500;
+}
+
+
+.nav-link:hover{
+    color:#d4af37 !important;
+}
+
+
+
+.search-box{
+    position:relative;
+}
+
+
+.search-box i{
+    position:absolute;
+    left:12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#777;
+}
+
+
+.search-box input{
+
+    width:220px;
+    border-radius:30px;
+    padding:8px 15px 8px 38px;
+    border:none;
+
+}
+
+
+
+.nav-icon{
+
+    color:white;
+    font-size:22px;
+    transition:.3s;
+
+}
+
+
+.nav-icon:hover{
+
+    color:#d4af37;
+    transform:translateY(-3px);
+
+}
+
+
+
+.cart-count{
+
+position:absolute;
+top:-10px;
+right:-10px;
+
+background:#d4af37;
+color:black;
+
+font-size:11px;
+
+width:18px;
+height:18px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
